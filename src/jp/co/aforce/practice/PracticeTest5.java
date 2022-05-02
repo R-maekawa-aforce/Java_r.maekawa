@@ -14,7 +14,13 @@ public class PracticeTest5 {
 
 		//練習問題３
 		String favorite = "猫";
-		System.out.println(animal.get(1) + "はリストに含まれています" );
+
+		if(animal.contains(favorite)) {
+			System.out.println(favorite + "はリストに含まれています" );
+		}
+		else {
+			System.out.println(favorite + "はリストに含まれていません");
+		}
 
 		//練習問題４
 		int birthday = 11;
