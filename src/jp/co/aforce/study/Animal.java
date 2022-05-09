@@ -17,4 +17,11 @@ public class Animal {
 		System.out.println(name + ":" + age);
 	}
 
+	String getSpeak() {
+		return "・・・・";
+	}
+
+	String getNamae() {
+		return "動物";
+	}
 }

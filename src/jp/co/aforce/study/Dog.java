@@ -15,6 +15,11 @@ public class Dog extends Animal {
 
 	void showProfile() {
 		System.out.println(this.name + ":" + this.age);
-
 	}
+
+	@Override
+	String getSpeak() {
+		return "わんわん";
+	}
+
 }

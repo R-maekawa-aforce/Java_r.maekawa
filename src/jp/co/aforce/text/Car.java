@@ -2,6 +2,19 @@ package jp.co.aforce.text;
 
 public class Car {
 	private int speed;
+	private String owner;
+
+	void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+	Car(){
+		this.speed = 10;
+	}
+
+	Car(int speed){
+		this.speed = speed;
+	}
 
 	int getSpeed(){
 		return this.speed;
@@ -29,4 +42,12 @@ public class Car {
 			this.speed = 180;
 		}
 	}
+		String getCarType() {
+			return "自動車";
+		}
+
+		int getSokudo() {
+			return 60;
+		}
+
 }
