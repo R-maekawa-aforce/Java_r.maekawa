@@ -2,6 +2,12 @@ package jp.co.aforce.text;
 
 import java.util.ArrayList;
 
+import jp.co.aforce.study.Mail;
+
+/**
+ * @author r.maekawa
+ *
+ */
 public class Main {
 	public static void main(String args[]) {
 
@@ -39,6 +45,36 @@ public class Main {
 		for(Car car : cars) {
 			System.out.println(car.getSokudo());
 		}
+
+
+		Key key = new Key();
+		car1.lock(key);
+
+
+		RemoteController controller = new RemoteController();
+		car1.lock(controller);
+
+		Car car = new Truck();
+		Truck truck2 = (Truck) car;
+
+		Person person1 = new Person();
+		Person person2 = new Person();
+
+		person1.setName("中垣");
+		person2.setName("林");
+
+		Person.setCount(2);
+
+		Mail mail = new Mail();
+
+
+
+
+
+
+
+
+
 
 	}
 }
